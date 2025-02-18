@@ -1,0 +1,6 @@
+function preload() {
+    this.load.image('background', 'assets/bg.png');
+    this.load.spritesheet('player', 'assets/meme_sprite.png', { frameWidth: 48, frameHeight: 48 });
+    this.load.image('obstacle', 'assets/cringe_police.png');
+    this.load.image('token', 'assets/viral_token.png');
+}
