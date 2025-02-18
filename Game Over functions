@@ -1,0 +1,5 @@
+function gameOver() {
+    this.physics.pause();
+    player.setTint(0xff0000);
+    scoreText.setText('Game Over! Score: ' + score);
+}
