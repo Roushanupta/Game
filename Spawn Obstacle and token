@@ -1,0 +1,15 @@
+function spawnObstacles() {
+    let obstacle = obstacles.create(800, 350, 'obstacle');
+    obstacle.setVelocityX(-gameSpeed);
+}
+
+function spawnTokens() {
+    let token = tokens.create(800, Phaser.Math.Between(200, 300), 'token');
+    token.setVelocityX(-gameSpeed);
+}
+
+function collectToken(player, token) {
+    token.destroy();
+    score += 10;
+    scoreText.setText('Score: ' + score);
+}
